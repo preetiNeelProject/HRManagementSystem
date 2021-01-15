@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+html {
+	height: 100%
+}
+
+#grad1 {
+	background: #F5F5F5;
+	margin: 30px 10px;
+}
+
+.allform {
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color:black !important;
+}
+
+
+
+.allform fieldset .form-card {
+	background: white;
+	border: 0 none;
+	border-radius: 0px;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	width: 94%;
+	margin: 0 3% 20px 3%;
+	position: relative
+}
+
+.allform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.table>tbody>tr>td input{
+	background: none !important;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 12px !important;
+    letter-spacing: normal!important;
+}
+
+
+
+.allform fieldset:not(:first-of-type ) {
+	display: none
+}
+
+.allform fieldset .form-card {
+	text-align: left;
+	color: #9E9E9E
+}
+
+.allform input, 
+.allform textarea,
+.allform select
+ {
+	padding: 0px 16px 4px 8px;
+	border-radius: 3px;
+	BORDER: none;
+	height: 35px;
+	margin-top: 2px;
+	width: 95%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: #F0F0F0;
+}
+
+.allform input:focus,
+.allform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid skyblue;
+    outline-width: 0
+}
+
+.allform .action-button {
+	width: 95px;
+	color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(0,0,0,0.075);
+}
+
+.allform .action-button:hover, 
+.allform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+}
+
+.allform .action-button-previous {
+	background: #d9534f;
+	width: 95px;
+	color: #fff;
+    border-color: #4cae4c;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(0,0,0,0.075);
+}
+
+.allform .action-button-previous:hover, 
+
+.allform .action-button-previous:focus
+	{
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+}
+
+select.list-dt {
+	border: none;
+	outline: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 2px 5px 3px 5px;
+	margin: 2px
+}
+
+select.list-dt:focus {
+	border-bottom: 2px solid skyblue
+}
+
+.card {
+	z-index: 0;
+	border: none;
+	border-radius: 0.5rem;
+	position: relative
+}
+
+.fs-title {
+	color: #2C3E50;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: left
+}
+
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	color: white;
+}
+
+#progressbar .active {
+	color: #000000
+}
+
+#progressbar li {
+	list-style-type: none;
+	font-size: 12px;
+	width: 16%;
+	float: left;
+	position: relative
+}
+
+#progressbar #account:before {
+	font-family: FontAwesome;
+	content: "\f023"
+}
+
+#progressbar #personal:before {
+	font-family: FontAwesome;
+	content: "\f007"
+}
+
+#progressbar #work:before {
+	font-family: FontAwesome;
+	content: "\f040"
+}
+
+#progressbar #educations:before {
+	font-family: FontAwesome;
+	content: "\f212"
+}
+
+#progressbar #family:before {
+	font-family: FontAwesome;
+	content: "\f004"
+}
+
+#progressbar #documents:before {
+	font-family: FontAwesome;
+	content: "\f24d"
+}
+
+#progressbar #payment:before {
+	font-family: FontAwesome;
+	content: "\f09d"
+}
+
+#progressbar #confirm:before {
+	font-family: FontAwesome;
+	content: "\f00c"
+}
+
+#progressbar li:before {
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	display: block;
+	font-size: 18px;
+	color: #ffffff;
+	background: lightgray;
+	border-radius: 50%;
+	margin: 0 auto 10px auto;
+	padding: 2px
+}
+
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: lightgray;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	z-index: -1
+}
+
+#progressbar li.active:before, 
+#progressbar li.active:after {
+	background: skyblue
+}
+
+.radio-group {
+	position: relative;
+	margin-bottom: 25px
+}
+
+.radio {
+	display: inline-block;
+	width: 204;
+	height: 104;
+	border-radius: 0;
+	background: lightblue;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 8px 2px
+}
+
+.radio:hover {
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.radio.selected {
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fit-image {
+	width: 100%;
+	object-fit: cover
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	font-size: 11px !important;
+}
+

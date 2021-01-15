@@ -1,0 +1,88 @@
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  right: 41%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-horizontal {
+  max-width: 95%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-horizontal input[type=text], .form-horizontal input[type=password], .form-horizontal input[type=date]{
+  width: 100%;
+  padding: 10px;
+  /* margin: 5px 0 22px 0; */
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-horizontal input[type=text]:focus, .form-horizontal input[type=password]:focus , .form-horizontal input[type=date]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-horizontal .btn {
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-horizontal .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-horizontal .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-horizontal input[type="text"], .form-horizontal input[type="date"], .form-horizontal input[type="datetime"], .form-horizontal input[type="email"], .form-horizontal input[type="number"], .form-horizontal input[type="search"], .form-horizontal input[type="time"], .form-horizontal input[type="url"], .form-horizontal textarea, .form-horizontal select {
+    border-color: #AEB6BF;
+    margin: 0;
+    outline: 0;
+    background-color: white;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 15px;
+    padding: 0px 16px 4px 8px;
+    border-radius: 3px;
+    BORDER: none;
+    height: 35px;
+    margin-top: 2px;
+    width: 95%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: #F0F0F0;
+}
+
