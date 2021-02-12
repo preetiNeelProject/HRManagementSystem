@@ -10,8 +10,7 @@
 			<div class="col-lg-11 col-sm-12"
 				style="width: 100%; padding-right: 0px;"><jsp:include
 					page="../commonView/header.jsp" /></div>
-			<div class="col-lg-11 col-sm-12" style="width: 100%;"><jsp:include
-					page="../commonView/navbar.jsp" /></div>
+			<div class="col-lg-11 col-sm-12" style="width: 100%;"></div>
 
 			<div class="col-lg-11 col-sm-12">
 

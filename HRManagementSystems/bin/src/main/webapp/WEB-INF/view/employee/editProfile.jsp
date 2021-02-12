@@ -1,7 +1,8 @@
-<%-- <jsp:include page="../header.jsp" /> --%>
+<script src="${pageContext.request.contextPath}/staticResources/JavaScript/editProfile.js"></script>
+<%@ page buffer="8192kb" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-<script src="${pageContext.request.contextPath}/staticResources/JavaScript/editProfile.js"></script>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-1 col-sm-12"><jsp:include
@@ -474,13 +475,13 @@
 																				style="padding: 0px;">
 																				<label>Project:</label>
 																				<div>
-																					<select name="projectId" id="projectId"
+																					<%-- <select name="projectId" id="projectId"
 																						disabled="disabled">
 																						<c:forEach items="${project}" var="project">
       																  <option value="${project.projectId}"
 																								${project.projectId == records.project ? 'selected="selected"' : ''}>${project.projectCode}</option>
   																  </c:forEach>
-																					</select><br />
+																					</select> --%><br />
 																				</div>
 																			</div>
 																			<div class="form-group col-sm-6"
@@ -649,7 +650,7 @@
 																			</tr>
 																		</thead>
 																		<tbody id="qualificationBody">
-																			<c:forEach var="i" begin="0"
+																	<%--		<c:forEach var="i" begin="0"
 																				end="${fn:length(records.education)-1}">
 																				<tr id="${i}">
 
@@ -689,7 +690,7 @@
 																						value="${records.education[i].educationalId}"
 																						name="educationalId" id="teducationalId">${records.education[i].educationalId}</td>
 																				</tr>
-																			</c:forEach>
+																			</c:forEach> --%>
 																		</tbody>
 																	</table>
 																</div>
@@ -780,7 +781,7 @@
 																		</thead>
 																		<tbody id="dependentBody">
 
-																			<c:forEach var="i" begin="0"
+																		<%--	<c:forEach var="i" begin="0"
 																				end="${fn:length(records.dependents)-1}">
 																				<tr id="${i}">
 																					<td><input type="hidden" name="ddfirstName"
@@ -808,7 +809,7 @@
 																						name="dddependentId" id="dddependentId">${records.dependents[i].dependentId}</td>
 																				</tr>
 
-																			</c:forEach>
+																			</c:forEach> --%>
 																		</tbody>
 																	</table>
 																</div>
@@ -880,7 +881,7 @@
 																			</tr>
 																		</thead>
 																		<tbody id="emergencyBody">
-																			<c:forEach var="i" begin="0"
+																	<%--		<c:forEach var="i" begin="0"
 																				end="${fn:length(records.emergency)-1}">
 																				<tr id="${i}">
 																					<td><input type="hidden" name="demergencyName"
@@ -906,7 +907,7 @@
 																						name="demergencyId" id="demergencyId">${records.emergency[i].emergencyId}</td>
 
 																				</tr>
-																			</c:forEach>
+																			</c:forEach> --%>
 																		</tbody>
 																	</table>
 																</div>

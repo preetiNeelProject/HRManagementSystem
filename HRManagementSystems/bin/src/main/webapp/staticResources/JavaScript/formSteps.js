@@ -1,88 +1,68 @@
-$(function() {
+$(function(){
 
-	var current_fs, next_fs, previous_fs; // fieldsets
-	var opacity;
+var current_fs, next_fs, previous_fs; //fieldsets
+var opacity;
 
-	$(".next").click(
-			function() {
-             /*Add Announcement Form Validation*/
-					current_fs = $(this).parent();
-					next_fs = $(this).parent().next();
+$(".next").click(function(){
 
-					// Add Class Active
-					$("#progressbar li").eq($("fieldset").index(next_fs))
-							.addClass("active");
+current_fs = $(this).parent();
+next_fs = $(this).parent().next();
 
-					var checkIn = document.forms["attendanceform"]["checkIn"].value;
-					var checkOut = document.forms["attendanceform"]["checkOut"].value;
-					if(checkIn != '' && checkOut != ''){
-						next_fs.show();
-						// show the next fieldset
-						
-						// hide the current fieldset with style
-						current_fs.animate({
-							opacity : 0
-						}, {
-							step : function(now) {
-								// for making fielset appear animation
-								opacity = 1 - now;
+//Add Class Active
+$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
-								current_fs.css({
-									'display' : 'none',
-									'position' : 'relative'
-								});
-								next_fs.css({
-									'opacity' : opacity
-								});
-							},
-							duration : 600
-						});
-					}
-					
-				
-				
-			});
+//show the next fieldset
+next_fs.show();
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
 
-	$(".previous").click(
-			function() {
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+next_fs.css({'opacity': opacity});
+},
+duration: 600
+});
+});
 
-				current_fs = $(this).parent();
-				previous_fs = $(this).parent().prev();
+$(".previous").click(function(){
 
-				// Remove class active
-				$("#progressbar li").eq($("fieldset").index(current_fs))
-						.removeClass("active");
+current_fs = $(this).parent();
+previous_fs = $(this).parent().prev();
 
-				// show the previous fieldset
-				previous_fs.show();
+//Remove class active
+$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 
-				// hide the current fieldset with style
-				current_fs.animate({
-					opacity : 0
-				}, {
-					step : function(now) {
-						// for making fielset appear animation
-						opacity = 1 - now;
+//show the previous fieldset
+previous_fs.show();
 
-						current_fs.css({
-							'display' : 'none',
-							'position' : 'relative'
-						});
-						previous_fs.css({
-							'opacity' : opacity
-						});
-					},
-					duration : 600
-				});
-			});
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
 
-	$('.radio-group .radio').click(function() {
-		$(this).parent().find('.radio').removeClass('selected');
-		$(this).addClass('selected');
-	});
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+previous_fs.css({'opacity': opacity});
+},
+duration: 600
+});
+});
 
-	$(".submit").click(function() {
-		return false;
-	})
+$('.radio-group .radio').click(function(){
+$(this).parent().find('.radio').removeClass('selected');
+$(this).addClass('selected');
+});
+
+$(".submit").click(function(){
+return false;
+})
 
 });

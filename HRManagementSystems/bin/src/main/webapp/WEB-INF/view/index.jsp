@@ -162,8 +162,8 @@ width: 450px;
 		<div class="row">
 			<div class="col-sm-12">
 				<center><h1 style="color:blue">Welcome HR Management System</h1>
-				<p>Check out our new apploication</p>
-				<a href="/login">Login</a></center>
+				<p>Check out our new application</p>
+				<a href="${pageContext.request.contextPath}/login">Login</a></center>
 			</div>
 			<div class="col-sm-12">
 				<div

@@ -118,7 +118,7 @@
 												<tr>
 													<th>Select</th>
 													<th>ID</th>
-													<th>Attendance-ID</th>
+													<th>Employee-ID</th>
 													<th>Name</th>
 													<th>Designation</th>
 													<th>Manager</th>
@@ -135,7 +135,7 @@
 															value="${record.employeeId}"></td>
 														<td>${record.employeeCode}</td>
 														<td>${record.employeeId}</td>
-														<td>${record.name}</td>
+														<td>${record.fname} ${record.lname} </td>
 														<td>${record.designation}</td>
 														<td>${record.manager}</td>
 														<td>${record.loginId}</td>

@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,6 @@
     	<td><p style="text-align: center; font-family: cambria math;"><b>&nbsp;&nbsp;</b></p></td>
    <td><p style="text-align: center; margin-top: 15px; font-size: 35px; color: #387403; font-family: cambria math;"><b style="color: #283655;">&nbsp;&nbsp;Neel Data Pro It Pvt. Ltd.</b></p></td>
    <td>
-   <jsp:include page="${pageContext.request.contextPath}/commonView/notifications.jsp" />
       </td>
    <td> 
    </td>

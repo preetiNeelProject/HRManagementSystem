@@ -19,11 +19,11 @@ var universityName
 
 document.addEventListener("DOMContentLoaded", init, false);
 
-function init() {
+/*function init() {
 	document.querySelector('#files').addEventListener('change',
 			handleFileSelect, false);
 	selDiv = document.querySelector("#selectedFiles");
-}
+}*/
 
 function handleFileSelect(e) {
 

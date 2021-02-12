@@ -46,7 +46,7 @@ margin: 7% 45%;
 			</div>
 
 			<!-- ----------------------Role Data Table-------------------- -->
-			<c:forEach items="${notifications}" var="notifications">
+			<%-- <c:forEach items="${notifications}" var="notifications">
 				<div class="col-md-12" style="padding: 10px 40px 10px;">
 					<div class="row" style="background: #f2f2f2;">
 						<div id="allData"
@@ -61,19 +61,19 @@ margin: 7% 45%;
 								</div>
 								<div class="col-sm-7">${notifications.activity}<br><br><i>By ${notifications.firstName}  &nbsp;&nbsp;${notifications.lastName}</i></div>
 								<div class="col-sm-2">
-								<%-- <div class=""
+								<div class=""
 										style="border-left: 2px solid green; height: 50px;">
 										 <a
 													class="btn btn-danger"
 													href="${pageContext.request.contextPath}/admincompany/deleteDepartment/${department.departmentId}"><i
 														class="fa fa-trash" aria-hidden="true"></i> </a> &nbsp;&nbsp;</td>
-														</div> --%>
+														</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</c:forEach>
+			</c:forEach> --%>
 
 			<!-- -----------Form------------------------- -->
 

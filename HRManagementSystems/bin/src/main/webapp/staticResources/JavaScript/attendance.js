@@ -31,8 +31,8 @@ function addAttendanceForm() {
 	var timesheetAccessBean = JSON.stringify(timesheet);
 
 	console.log("jsonString == " + timesheetAccessBean);
-	//var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/attendance/add_Attendance';
-	var urlF='/admin/attendance/add_Attendance';
+	var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/attendance/add_Attendance';
+	//var urlF='/admin/attendance/add_Attendance';
 	$.ajax({
 		type : "POST",
 		contentType : "application/json",

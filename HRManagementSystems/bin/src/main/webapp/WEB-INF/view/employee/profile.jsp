@@ -18,7 +18,7 @@
 						<div class="row">
 							<div style="margin-left: 29px;">
 								<h2>
-									<b>Department</b>
+									<b>Profile</b>
 								</h2>
 							</div>
 						</div>
@@ -27,9 +27,9 @@
 						<div class="row">
 							<ul style="float: right; margin-right: 10%;">
 								<li>
-								<button class="btn btn-danger" style="color: white;"
+								<!-- <button class="btn btn-danger" style="color: white;"
 										onclick="location.href='../employee/editProfile/111'">
-										Edit Profile</button>
+										Edit Profile</button> -->
 									
 										
 

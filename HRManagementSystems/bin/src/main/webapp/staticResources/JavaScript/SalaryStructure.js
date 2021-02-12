@@ -2,8 +2,8 @@ function createEmpSalaryStructure() {
 	var employeeId = $("#employeeId").val();
 	var ctc = $("#cTC").val();
 	var host = window.location.host;
-	var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'calBasicSalary';
-	//urlF='/calBasicSalary'
+	//var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'calBasicSalary';
+	urlF='/calBasicSalary'
 	//alert(search);
 	 if(ctc.length>3){  
 	$.ajax({
@@ -107,7 +107,7 @@ function salarySlipDownload(){
 	var pf = document.forms["emloyeeSalaryForm"]["pf"].value;
 	var cTC = document.forms["emloyeeSalaryForm"]["cTC"].value;
 	var esi = document.forms["emloyeeSalaryForm"]["esi"].value;
-	var gratuity = document.forms["emloyeeSalaryForm"]["gratuity"].value;
+	var gratuity = 0;
 	var annualRefSalary = document.forms["emloyeeSalaryForm"]["annualRefSalary"].value;
 
 	
@@ -129,16 +129,18 @@ function salarySlipDownload(){
 	var employeeCTCAccessBean = JSON.stringify(employeeCtc);
 
 	console.log("jsonString == " + employeeCTCAccessBean);
-	var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/payroll/monthlySalary';
+	//var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/payroll/SalarySlips';
+	var urlF='/admin/payroll/SalarySlips';
 	$.ajax({
 		type : "POST",
 		contentType : "application/json",
 		url : urlF,
 		data : employeeCTCAccessBean,
-		dataType : 'json',
+		dataType : 'application/pdf',
 		cache : false,
 		success : function(response) {
 			console.log(response);
+			 window.location = urlF;
 		},
 
 		error : function(error) {

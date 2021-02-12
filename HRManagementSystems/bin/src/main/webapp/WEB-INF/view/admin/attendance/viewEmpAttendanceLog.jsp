@@ -4,22 +4,6 @@
 <script
 	src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
-<style>
-tfoot {
-	display: table-header-group;
-}
-
-#table_filter {
-	float: right;
-}
-
-#table_filter input {
-	width: 258px;
-	height: 30px;
-	border-radius: 5px;
-	margin-bottom: 10px;
-}
-</style>
 
 <div class="container-fluid">
 <div class="row">
@@ -98,7 +82,7 @@ tfoot {
 								<div class="table-responsive">
 									<table id="table" class="table table-bordred table-striped">
 
-										<thead>
+										<thead style="background: #283655; color: white;">
 											<tr>
 												<th></th>
 												<th>Date</th>
@@ -112,20 +96,7 @@ tfoot {
 												<th>Action</th>
 											</tr>
 										</thead>
-										<tfoot>
-											<tr>
-												<th style="width: 14px; height: 14px;"></th>
-												<th>Date</th>
-												<th>Status</th>
-												<th>In-Time</th>
-												<th>Out-Time</th>
-												<th>Work Duration</th>
-												<th>Breaks</th>
-												<th>Break Duration</th>
-												<th>Over Time</th>
-												<th></th>
-											</tr>
-										</tfoot>
+										
 										<tbody id="salaryRevisionTable">
 											<c:forEach items="${records}" var="record">
 												<tr>

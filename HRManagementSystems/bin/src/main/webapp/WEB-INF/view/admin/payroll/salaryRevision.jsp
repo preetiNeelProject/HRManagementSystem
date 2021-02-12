@@ -44,12 +44,12 @@ tfoot {
 						<div class="row">
 							<ul style="float: right; margin-right: 10%;">
 								<li>
-									<button class="btn btn-danger" style="color: white;"
-										onclick="location.href='../../admin/payroll/salary-structure'">
-										Add Salary</button>
-									<button class="btn btn-danger" style="color: white;"
-										onclick="location.href='../../admin/payroll/addIncrementSalary'">
-										Increment Salary</button>
+									<a class="btn btn-danger" style="color: white;"
+										href="${pageContext.request.contextPath}/admin/payroll/salaryStructure">
+										Add Salary</a>
+									<a class="btn btn-danger" style="color: white;"
+										href="${pageContext.request.contextPath}/admin/payroll/addIncrementSalary">
+										Increment Salary</a>
 
 
 								</li>
@@ -121,8 +121,8 @@ tfoot {
 											<td>${currentRecord.esi}</td>
 											<td style="display: inline-block;"><a
 													class="btn btn-warning"
-													onclick=""><i
-														class="fa fa-download" aria-hidden="true"></i> </a> <a
+													href="${pageContext.request.contextPath}/admin/payroll/salaryStructure"><i
+														class="fa fa-pencil" aria-hidden="true"></i> </a> <a
 													class="btn btn-success"
 													onclick=""><i
 														class="fa fa-trash" aria-hidden="true"></i> </a>

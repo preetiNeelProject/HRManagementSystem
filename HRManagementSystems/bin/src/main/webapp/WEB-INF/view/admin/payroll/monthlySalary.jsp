@@ -50,7 +50,7 @@ tfoot {
 								<div class="col-sm-6">
 									Employee-Code <select name="employeeCode" id="employeeCode">
 										<c:forEach items="${employee}" var="employee">
-      									<option name="employeeCode" id="employeeCode" value="${employee.employeeCode}">${employee.employeeCode}</option>
+      									<option name="employeeCode" id="employeeCode" value="${employee.employeeCode}">${employee.employeeCode} - ${employee.firstName} ${employee.lastName}</option>
 										</c:forEach>
 									</select>
 								</div>

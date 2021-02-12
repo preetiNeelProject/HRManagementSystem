@@ -112,7 +112,7 @@ label {
 							<div class="col-sm-7">
 								<div class="form-box" style="margin: 2%;">
 									<div class="row">
-										<form class="form-horizontal" action="/calculateTax"
+										<form class="form-horizontal" action="${pageContext.request.contextPath}/calculateTax"
 											th:action="@{calculateTax}" method="GET" th:object="${tax}">
 											<div class="nav">
 												<div class="tab">

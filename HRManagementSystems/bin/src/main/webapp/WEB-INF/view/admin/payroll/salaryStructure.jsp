@@ -31,7 +31,7 @@
 								<div class="col-sm-8">
 								<select name="employeeId" id="employeeId">
 								<c:forEach items="${records}" var="record">
-      									<option value="${record.employeeId}">${record.employeeCode}</option>
+      									<option value="${record.employeeId}">${record.employeeCode} - ${record.firstName} ${record.lastName}</option>
                                  </c:forEach>
 											</select>
 								</div>
@@ -39,15 +39,15 @@
 						<div class="form-group">
 								<label class="control-label col-sm-4">Full name:</label>
 								<div class="col-sm-8">
-									<input type="text" id="name" name="name"  /><br />
+									<input type="text" id="name" name="name" /><br />
 								</div>
 							</div>  
-						<!-- 	<div class="form-group">
+							<div class="form-group" style="display:none">
 								<label class="control-label col-sm-4">Joining Date:</label>
 								<div class="col-sm-8">
 									<input type="date" id="joiningDate" name="joiningDate" /><br />
 								</div>
-							</div> -->
+							</div> 
 							<h5>Salary Details</h5>
 							<div class="form-group">
 								<label class="control-label col-sm-4">Salary:</label>
@@ -119,7 +119,7 @@
 										 readonly="true"/><br />
 								</div>
 							</div>
-							<button type="button" class="btn" onclick="salarySlipDownload();"><i class="fa fa-download" style="font-size: 18px;"></i> &nbsp Slip</button>
+							<button type="button" style="display:none" class="btn" onclick="salarySlipDownload();"><i class="fa fa-download" style="font-size: 18px;"></i> &nbsp Slip</button>
 							<button type="submit" class="btn btn-warning" style="">Submit</button>
 							<button type="reset" class="btn-cancel" style="">Cancel</button>
 						</form>

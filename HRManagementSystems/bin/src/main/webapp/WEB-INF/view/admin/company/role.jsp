@@ -102,10 +102,10 @@ tfoot {
 														class="fa fa-pencil" aria-hidden="true"></i> </a> <%-- <a
 													class="btn btn-warning"
 													onclick="downloadTimeSheetForm('${location.workLocationId}')"><i
-														class="fa fa-download" aria-hidden="true"></i> </a> --%> <a
+														class="fa fa-download" aria-hidden="true"></i> </a> <a
 													class="btn btn-success"
-													href="${pageContext.request.contextPath}/admin//company/deleteRole/${role.roleId}"><i
-														class="fa fa-trash" aria-hidden="true"></i> </a>
+													href="${pageContext.request.contextPath}/admin/company/deleteRole/${role.roleId}"><i
+														class="fa fa-trash" aria-hidden="true"></i>  </a> --%>
 															&nbsp;&nbsp;</td>
 											</tr>
 										</c:forEach>

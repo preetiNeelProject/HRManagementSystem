@@ -51,7 +51,7 @@ function submitForm() {
 	var departmentAccessBean = JSON.stringify(department);
 
 	console.log("jsonString == " + departmentAccessBean);
-	var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/company/addAnnouncement';
+	var urlF=location.protocol + '/' +window.location.pathname.split('/')[1]+ '/' + 'admin/company/addDepartment';
 	$.ajax({
 		type : "POST",
 		contentType : "application/json",

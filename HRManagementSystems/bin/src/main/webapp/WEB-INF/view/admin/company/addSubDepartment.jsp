@@ -134,7 +134,7 @@ tfoot {
 																	</div>
 																</div>
 																<div class="form-group col-sm-6" style="padding: 0px;">
-																	<label>Manager:</label>
+																	<label>Manager:(Value-1to9)</label>
 																	<div>
 																		<input type="text" name="managerId" id="managerId"
 																			value="${subdep.managerId}" />

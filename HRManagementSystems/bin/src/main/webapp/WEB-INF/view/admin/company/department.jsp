@@ -120,7 +120,7 @@ tfoot {
 													onclick="downloadTimeSheetForm('${location.workLocationId}')"><i
 														class="fa fa-download" aria-hidden="true"></i> </a> --%> <a
 													class="btn btn-success"
-													href="${pageContext.request.contextPath}/admincompany/deleteDepartment/${department.departmentId}"><i
+													href="${pageContext.request.contextPath}/admin/company/deleteDepartment/${department.departmentId}"><i
 														class="fa fa-trash" aria-hidden="true"></i> </a> &nbsp;&nbsp;</td>
 											</tr>
 										</c:forEach>
