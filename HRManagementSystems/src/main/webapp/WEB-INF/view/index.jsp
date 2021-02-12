@@ -162,14 +162,14 @@ width: 450px;
 		<div class="row">
 			<div class="col-sm-12">
 				<center><h1 style="color:blue">Welcome HR Management System</h1>
-				<p>Check out our new application</p>
+				<p>Check out our new application ---</p>
 				<a href="${pageContext.request.contextPath}/login">Login</a></center>
 			</div>
 			<div class="col-sm-12">
 				<div
 					style="margin-left: 38%; width: 390px; height: 40px; margin-top: 100px;">
 					<a href="#"
-						style="color: black; text-decoration: none; align: center;">©<strong>2020
+						style="color: black; text-decoration: none; align: center;">Â©<strong>2020
 							Neel Data Industrial Development Authority</strong></a> <br>
 				</div>
 			</div>
