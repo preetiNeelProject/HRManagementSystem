@@ -171,7 +171,7 @@ public class CompanyControllerCmd {
 	 *
 	 */
 	@RequestMapping(value = "admin/company/addDepartment", method = RequestMethod.POST, consumes = "application/json;charset=UTF-8", produces = "application/json;charset=UTF-8")
-	public @ResponseBody Long add_Department(@RequestBody DepartmentAccessBean departmentAccessBean) {
+	public @ResponseBody Long add_Department(@RequestBody 	n) {
 		DepartmentAccessBean depAB = companyService.addDepartment(departmentAccessBean);
 		return depAB.getDepartmentId();
 	}
